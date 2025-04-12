@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aitrails - Veiligheid langs het Spoor</title>
     <style>
+        /* Fade-down animaties */
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+             font-family: 'Montserrat', sans-serif;
+            margin: 5;
             padding: 0;
-            background-color: #f4faff;
+            background-color: #c8e4e4;
             /* Lichtblauw */
             color: #294d63;
             /* Legergroen */
+            animation: fadeIn 1s ease-out;
         }
 
         header {
             background: linear-gradient(90deg, #c8e4e4, #ffaec9);
             /* Lichtroze naar lichtblauw */
-            color: #0a0b09;
+            color: ;
             /* Legergroen */
-            padding: 20px 0;
+            padding: 100px 0;
             text-align: center;
             position: relative;
-        }
+          animation: fadeDown 0.8s ease-out;}
+
+        nav a{margin: 0 50px;
+    text-decoration: none;
+    color: #35566e;
+    font-weight: bold;
+    padding: 8px 16px; /* Voeg wat padding toe voor betere weergave */
+    border: 2px solid #ffaec9; /* Zwarte rand van 2px dikte */
+    border-radius: 20px; /* Licht afgeronde hoeken */
+    background-color: #c8e4e4;; /* Witte achtergrond */
+    transition: all 0.3s ease; /* Vloeiende hover-animatie */
+  animation: fadeDown 0.8s ease-out 0.5s forwards;}
 
         header img {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 125px;
-            /* Pas de grootte van het logo aan */
-            height: auto;
-        }
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 200px;  /* vaste breedte in pixels */
+    height: auto;  /* hoogte past zich automatisch aan */
+    max-width: 100%; /* zorgt dat het niet te groot wordt */
+    animation: fadeDown 0.8s ease-out 0.5s forwards;
+}
+        
 
         nav {
             margin: 20px 0;
             text-align: center;
         }
 
-        nav a {
-            margin: 0 15px;
+
+
+nav a:hover {
+    background-color: #f0f0f0; /* Lichtgrijze achtergrond bij hover */
+    color: #2a4a5f; /* Iets donkerder blauw bij hover */
+}
+            margin: 0 30px;
             text-decoration: none;
             color: #35566e;
             /* Legergroen */
@@ -57,9 +92,9 @@
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 15px;
             text-align: center;
-            background-color: #ffffff;
+            background-color: #c8e4e4;
             /* Witte achtergrond voor secties */
             padding: 20px;
             border-radius: 8px;
@@ -74,7 +109,7 @@
         footer {
             background: #35566e;
             /* Legergroen */
-            color: white;
+            color: #D8F0F0;
             text-align: center;
             padding: 10px 0;
             position: fixed;
@@ -83,12 +118,12 @@
         }
 
         .contact-info {
-            margin: 0;
-            line-height: 1.8;
+            margin: 5;
+            line-height: 2.8;
         }
 
         .contact-info a {
-            color: #007BFF;
+            color: #35566e;
             /* Blauw voor links */
             text-decoration: none;
         }
@@ -101,17 +136,18 @@
 
 <body>
     <header>
+      <nav>  <img src="mnl/LOGO01.png" class="LOGO01"> </nav>
 
-        <img src="eersteweb/railspoor.png" alt="">
-        <h1>Aitrails - Veiligheid Langs het Spoor</h1>
-        <p>Specialist in projectbeveiliging en veilige spoorwerkzaamheden</p>
+        <h1>AitRails- Veiligheid eerst, Altijd</h1>
+        <p>Betrouwbare veiligheidsdiensten voor een veilige en efficiënte railinfra.</p>
     </header>
+    
 
     <nav>
         <a href="#over-ons">Over Ons</a>
         <a href="#diensten">Diensten</a>
         <a href="#contact">Contact</a>
-    </nav>
+    
 
     <main>
         <section id="over-ons">
@@ -121,16 +157,43 @@
                 werkomgeving, waarbij zowel mensen als materiaal optimaal beschermd zijn.</p>
         </section>
         <section id="diensten">
-            <h2>Onze Diensten</h2>
-            <p>Bij Aitrails bieden we gespecialiseerde diensten aan zoals:</p>
+            <h1>Onze Diensten</h1>
+            <p>Onze diensten zijn gericht op het creëren van veilige werkomgevingen en het bieden van professionele begeleiding. Wij zorgen ervoor dat elke stap op het spoor veilig wordt uitgevoerd.</p>
             <ul>
-                <li>Projectbeveiliging langs het spoor</li>
-                <li>Het plaatsen en verwijderen van spoorbeveiligingsmiddelen</li>
-                <li>Beveiligen van materiaal en personeel</li>
-                <li>Risicoanalyses en veiligheidsplannen</li>
-                <li>Toezicht op werkzaamheden in risicovolle gebieden</li>
-            </ul>
-            <p>Onze prioriteit is om te zorgen dat uw project veilig en volgens planning verloopt.</p>
+                    <div class="service">
+            <h3>✅ Grenswachter (GRW)</h3>
+            <p><span class="checkmark">✔</span> Grensbewaking van de gevarenzone</p>
+            <p><span class="checkmark">✔</span> Grijpt in bij overschrijding van de gevarenzone</p>
+            <p><span class="checkmark">✔</span> Zorgt dat ploegleden zich niet onbedoeld in de gevarenzone begeven</p>
+        </div>
+
+        <div class="service">
+            <h3>✅ Veiligheidsman (VHM)</h3>
+            <p><span class="checkmark">✔</span> Veiligheid binnen de gevarenzone van een in dienst zijnde spoor</p>
+            <p><span class="checkmark">✔</span> Bescherming van uw team terwijl treinen nog rijden</p>
+        </div>
+
+        <div class="service">
+            <h3>✅ Begeleiden buitendienstgesteld spoor (BBD)</h3>
+            <p><span class="checkmark">✔</span> Begeleiding van veilige voertuigbewegingen op buitendienstgesteld spoor</p>
+            <p><span class="checkmark">✔</span> Plaatsen en verwijderen van veiligheidsmaatregelen</p>
+        </div>
+
+        <div class="service">
+            <h3>✅ Leider Lokale Veiligheid (LLV)</h3>
+            <p><span class="checkmark">✔</span> Veiligheid op lokaal niveau</p>
+            <p><span class="checkmark">✔</span> Communicatie met de LVB</p>
+            <p><span class="checkmark">✔</span> Implementatie van veiligheidsmaatregelen</p>
+        </div>
+
+        <div class="service">
+            <h3>✅ Leider Lokale Werkplek (LWB)</h3>
+            <p><span class="checkmark">✔</span> Contactpersoon voor de treindienstleider</p>
+            <p><span class="checkmark">✔</span> Coördinatie van veiligheidsmaatregelen</p>
+            <p><span class="checkmark">✔</span> Aansturing van veiligheidspersoneel</p>
+        </div>
+    </section>
+            
         </section>
         <section id="contact">
             <h2>Contact</h2>
@@ -138,6 +201,7 @@
             <p>Neem contact met ons op:</p>
             <p class="contact-info">
                 <strong>E-mail:</strong> <a href="mailto:y-aitsaid@aitrails.nl">y-aitsaid@aitrails.nl</a><br>
+                <strong>Telefoon:</strong> <a href="tel:+31615031299">06-15031299</a><br>
                 <strong>Website:</strong> <a href="https://www.aitrails.nl" target="_blank">www.aitrails.nl</a><br>
                 <strong>KvK-nummer:</strong> 85436968<br>
                 <strong>BTW-nummer:</strong> NL004093890B28
