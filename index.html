@@ -7,8 +7,14 @@
     <style>
         /* Fade-down animaties */
         @keyframes fadeDown {
-            from { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeIn {
@@ -16,188 +22,185 @@
             to { opacity: 1; }
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
+             font-family: 'Montserrat', sans-serif;
+            margin: 5;
             padding: 0;
             background-color: #c8e4e4;
+            /* Lichtblauw */
             color: #294d63;
+            /* Legergroen */
             animation: fadeIn 1s ease-out;
         }
 
         header {
             background: linear-gradient(90deg, #c8e4e4, #ffaec9);
-            color: #35566e;
-            padding: 80px 0;
+            /* Lichtroze naar lichtblauw */
+            color: ;
+            /* Legergroen */
+            padding: 100px 0;
             text-align: center;
             position: relative;
-            animation: fadeDown 0.8s ease-out;
-        }
+          animation: fadeDown 0.8s ease-out;}
 
-               
+        nav a{margin: 0 50px;
+    text-decoration: none;
+    color: #35566e;
+    font-weight: bold;
+    padding: 8px 16px; /* Voeg wat padding toe voor betere weergave */
+    border: 2px solid #ffaec9; /* Zwarte rand van 2px dikte */
+    border-radius: 20px; /* Licht afgeronde hoeken */
+    background-color: #c8e4e4;; /* Witte achtergrond */
+    transition: all 0.3s ease; /* Vloeiende hover-animatie */
+  animation: fadeDown 0.8s ease-out 0.5s forwards;}
+
         header img {
     position: absolute;
     top: 0px;
     left: 0%;
-    width: 150px;  /* vaste breedte in pixels */
+    width: 200px;  /* vaste breedte in pixels */
     height: auto;  /* hoogte past zich automatisch aan */
     max-width: 100%; /* zorgt dat het niet te groot wordt */
-        }
+    animation: fadeDown 0.8s ease-out 0.5s forwards;
+}
+        
 
         nav {
             margin: 20px 0;
             text-align: center;
         }
 
-        nav a {
-            display: inline-block;
-            margin: 10px 5px;
-            padding: 8px 16px;
+
+
+nav a:hover {
+    background-color: #f0f0f0; /* Lichtgrijze achtergrond bij hover */
+    color: #2a4a5f; /* Iets donkerder blauw bij hover */
+}
+            margin: 0 30px;
             text-decoration: none;
             color: #35566e;
+            /* Legergroen */
             font-weight: bold;
-            border: 2px solid #ffaec9;
-            border-radius: 20px;
-            background-color: #c8e4e4;
-            transition: all 0.3s ease;
-            animation: fadeDown 0.8s ease-out 0.5s forwards;
         }
 
         nav a:hover {
-            background-color: #c8e4e4;
-            color: #2a4a5f;
+            text-decoration: underline;
         }
 
         main {
             padding: 20px;
-            margin-bottom: 60px; /* Ruimte voor footer */
         }
 
         section {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             text-align: center;
             background-color: #c8e4e4;
+            /* Witte achtergrond voor secties */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 { font-size: 2rem; }
-        h2 { font-size: 1.5rem; color: #35566e; }
-        h3 { font-size: 1.2rem; }
-
-        .service {
-            margin: 15px 0;
-            text-align: left;
-            padding: 10px;
-            background: #c8e4e4(255, 255, 255, 0.7);
-            border-radius: 5px;
+        section h2 {
+            color: #35566e;
+            /* Legergroen */
         }
 
         footer {
             background: #35566e;
+            /* Legergroen */
             color: #D8F0F0;
             text-align: center;
-            padding: 15px 0;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
             width: 100%;
         }
 
         .contact-info {
-            margin: 10px 0;
-            line-height: 1.6;
+            margin: 5;
+            line-height: 2.8;
         }
 
         .contact-info a {
             color: #35566e;
+            /* Blauw voor links */
             text-decoration: none;
         }
 
-        /* Responsive aanpassingen */
-        @media (max-width: 768px) {
-            header {
-                padding: 20px 0;
-            }
-            
-            .logo {
-                width: 120px;
-            }
-            
-            nav a {
-                display: block;
-                margin: 8px auto;
-                width: 80%;
-                max-width: 250px;
-            }
-            
-            h1 { font-size: 1.5rem; }
-            h2 { font-size: 1.3rem; }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="https://raw.githubusercontent.com/aitrailss/aitrails.nl/refs/heads/main/LOGO01.png" alt="Aitrails Logo" class="logo">
-        <h1>AitRails - Veiligheid eerst, Altijd</h1>
+      <nav>  <img src="mnl/LOGO01.png" class="LOGO01"> </nav>
+
+        <h1>AitRails- Veiligheid eerst, Altijd</h1>
         <p>Betrouwbare veiligheidsdiensten voor een veilige en efficiënte railinfra.</p>
     </header>
+    
 
     <nav>
         <a href="#over-ons">Over Ons</a>
         <a href="#diensten">Diensten</a>
         <a href="#contact">Contact</a>
-    </nav>
+    
 
     <main>
         <section id="over-ons">
             <h2>Over Aitrails</h2>
-            <p>Aitrails is uw betrouwbare partner voor veilige werkzaamheden langs het spoor. Wij zorgen voor een veilige werkomgeving, waarbij zowel mensen als materiaal optimaal beschermd zijn.</p>
+            <p>Aitrails is uw betrouwbare partner voor veilige werkzaamheden langs het spoor. Wij zorgen voor een
+                veilige
+                werkomgeving, waarbij zowel mensen als materiaal optimaal beschermd zijn.</p>
         </section>
-        
         <section id="diensten">
-            <h2>Onze Diensten</h2>
-            <p>Onze diensten zijn gericht op het creëren van veilige werkomgevingen en het bieden van professionele begeleiding.</p>
+            <h1>Onze Diensten</h1>
+            <p>Onze diensten zijn gericht op het creëren van veilige werkomgevingen en het bieden van professionele begeleiding. Wij zorgen ervoor dat elke stap op het spoor veilig wordt uitgevoerd.</p>
+            <ul>
+                    <div class="service">
+            <h3>✅ Grenswachter (GRW)</h3>
+            <p><span class="checkmark">✔</span> Grensbewaking van de gevarenzone</p>
+            <p><span class="checkmark">✔</span> Grijpt in bij overschrijding van de gevarenzone</p>
+            <p><span class="checkmark">✔</span> Zorgt dat ploegleden zich niet onbedoeld in de gevarenzone begeven</p>
+        </div>
+
+        <div class="service">
+            <h3>✅ Veiligheidsman (VHM)</h3>
+            <p><span class="checkmark">✔</span> Veiligheid binnen de gevarenzone van een in dienst zijnde spoor</p>
+            <p><span class="checkmark">✔</span> Bescherming van uw team terwijl treinen nog rijden</p>
+        </div>
+
+        <div class="service">
+            <h3>✅ Begeleiden buitendienstgesteld spoor (BBD)</h3>
+            <p><span class="checkmark">✔</span> Begeleiding van veilige voertuigbewegingen op buitendienstgesteld spoor</p>
+            <p><span class="checkmark">✔</span> Plaatsen en verwijderen van veiligheidsmaatregelen</p>
+        </div>
+
+        <div class="service">
+            <h3>✅ Leider Lokale Veiligheid (LLV)</h3>
+            <p><span class="checkmark">✔</span> Veiligheid op lokaal niveau</p>
+            <p><span class="checkmark">✔</span> Communicatie met de LVB</p>
+            <p><span class="checkmark">✔</span> Implementatie van veiligheidsmaatregelen</p>
+        </div>
+
+        <div class="service">
+            <h3>✅ Leider Lokale Werkplek (LWB)</h3>
+            <p><span class="checkmark">✔</span> Contactpersoon voor de treindienstleider</p>
+            <p><span class="checkmark">✔</span> Coördinatie van veiligheidsmaatregelen</p>
+            <p><span class="checkmark">✔</span> Aansturing van veiligheidspersoneel</p>
+        </div>
+    </section>
             
-            <div class="service">
-                <h3>✅ Grenswachter (GRW)</h3>
-                <p>✔ Grensbewaking van de gevarenzone</p>
-                <p>✔ Grijpt in bij overschrijding van de gevarenzone</p>
-            </div>
-
-            <div class="service">
-                <h3>✅ Veiligheidsman (VHM)</h3>
-                <p>✔ Veiligheid binnen de gevarenzone van een in dienst zijnde spoor</p>
-                <p>✔ Bescherming van uw team terwijl treinen nog rijden</p>
-            </div>
-
-            <div class="service">
-                <h3>✅ Begeleiden buitendienstgesteld spoor (BBD)</h3>
-                <p>✔ Begeleiding van veilige voertuigbewegingen</p>
-                <p>✔ Plaatsen van veiligheidsmaatregelen</p>
-            </div>
-
-            <div class="service">
-                <h3>✅ Leider Lokale Veiligheid (LLV)</h3>
-                <p>✔ Veiligheid op lokaal niveau</p>
-                <p>✔ Communicatie met de LVB</p>
-            </div>
-
-            <div class="service">
-                <h3>✅ Leider Lokale Werkplek (LWB)</h3>
-                <p>✔ Contactpersoon voor de treindienstleider</p>
-                <p>✔ Coördinatie van veiligheidsmaatregelen</p>
-            </div>
         </section>
-        
         <section id="contact">
             <h2>Contact</h2>
+            <p>Heeft u een project langs het spoor en bent u op zoek naar een betrouwbare partner voor beveiliging?</p>
             <p>Neem contact met ons op:</p>
-            <div class="contact-info">
-               <!-- Telefoonicoon -->
+            <p class="contact-info">
+<!-- Telefoonicoon -->
 <a href="tel:+31615031299">
   <i class="material-icons"></i> Bel ons
 </a>
@@ -207,13 +210,15 @@
   <i class="material-icons"></i> Mail ons
 </a>
                  <a href="https://www.aitrails.nl" target="_blank">www.aitrails.nl</a><br>
-            </div>
+                <strong>KvK-nummer:</strong> 85436968<br>
+                <strong>BTW-nummer:</strong> NL004093890B28
+            </p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Aitrails - Alle rechten voorbehouden</p>
-        <p>KvK: 85436968 | BTW: NL004093890B28</p>
     </footer>
 </body>
+
 </html>
