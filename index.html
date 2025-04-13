@@ -63,6 +63,14 @@
     max-width: 100%; /* zorgt dat het niet te groot wordt */
     animation: fadeDown 0.8s ease-out 0.5s forwards;
 }
+                .logo-circle {
+  width: 150px;                  /* Pas aan naar gewenste grootte */
+  height: 150px;                 /* Gelijk aan width */
+  padding: 10px;                 /* Ruimte tussen logo en rand */
+  background-color:linear-gradient(90deg, #c8e4e4, #ffaec9);
+  border-radius: 50%;            /* Cirkelvorm */
+  object-fit: contain;           /* Zorgt dat logo niet vervormt */
+}
         
 
         nav {
@@ -136,7 +144,7 @@ nav a:hover {
 
 <body>
     <header>
-       <img src="https://raw.githubusercontent.com/aitrailss/aitrails.nl/refs/heads/main/LOGO01.png" alt="Aitrails Logo" class="logo">
+       <img src="https://raw.githubusercontent.com/aitrailss/aitrails.nl/refs/heads/main/LOGO01.png" alt="Aitrails Logo" class="logo-circle">
 
         <h1>AitRails- Veiligheid eerst, Altijd</h1>
         <p>Betrouwbare veiligheidsdiensten voor een veilige en efficiënte railinfra.</p>
